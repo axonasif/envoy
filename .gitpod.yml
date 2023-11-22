@@ -1,0 +1,8 @@
+image:
+  file: ci/Dockerfile-gitpod
+
+tasks:
+  - name: Build envoy and cache the artifacts
+    init: |
+      bazel build -c opt envoy
+
